@@ -1,0 +1,16 @@
+body{
+background-image: url("https://wallpapercave.com/wp/wp3641960.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.jumbotron {
+    background-image: url("https://cdn1.parksmedia.wdprapps.disney.com/media/blog/wp-content/uploads/2013/10/qee394852Small.jpg");
+     background-size: 100% 100%;
+    height: 130px;
+    text-align: center; 
+    color: whitesmoke;
+    font-family: 'Lobster Two', cursive;
+    font-size: 40px;
+}
+
