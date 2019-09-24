@@ -14,3 +14,56 @@ background-size: cover;
     font-size: 40px;
 }
 
+#submit {
+    font-family: 'Lobster Two', cursive;
+    background-color: blue;
+    font-size: 20px;
+    
+}
+
+.title-search-bar {
+    text-align: center;
+}
+
+.search-btn {
+    background-color: blue;
+    font-family: 'Lobster Two', cursive;
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+#results {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.git-box {
+    margin: 0.5rem;
+    display: flex;
+    border-radius: 8px;
+    height: auto;
+    width: auto;
+}
+.img {
+display: inline-block;
+
+}
+
+h6{
+color: whitesmoke;
+}
+
+@media only screen and (max-width: 700px) {
+.responsive {
+    width: 49.%;
+    margin: 6px 0;
+}
+}
+
+@media only screen and (max-width: 500px){
+.responsive {
+    width: 100%;
+}
+}
+
+
