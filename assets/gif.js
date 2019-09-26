@@ -1,5 +1,19 @@
 var topics = ["Maleficent", "Scar", "Evil Queen", "Ursula", "Gaston"];
 
+//$("#addTopicsButtons").on("Click", function(){
+  //var topicsTyped =$("#textInputID").val()
+
+////  if (topicsTyped.length !=0){
+    //topics,push(topicsTyped)
+ // }
+//});
+
+
+
+function refreshPage(){
+  window.location.reload();
+}
+
 
 function addSearchBtns() {
   $("#buttons").html("");
@@ -30,12 +44,14 @@ $(document).on("click", ".btn", function () {
   else if ($("#user-serach").val() !== "") {
     query = $("#user-search").val();
     topics.push(query);
-    if (topics.length > 5) {
+    if (topics.length > 6) {
       topics.shift();
     }
     addSearchBtns();
-    delete params.q;
+   delete params.q;
   }
+
+ 
 
   params.q = query;
 
@@ -46,7 +62,7 @@ $(document).on("click", ".btn", function () {
       for (i = 0; i < params.limit; i++) {
         var $img = $("<img>");
         var $div = $("<div>");
-        var $rating = $("<h6>");
+        var $rating = $("<h6>");    //font size for ratings
         var gifObj = r.data[i];
         var gif = gifObj.images;
 

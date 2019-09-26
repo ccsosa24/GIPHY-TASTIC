@@ -21,35 +21,44 @@
             <h1>Disney's Villains</h1>
         </div>
     </div>
+
     <div class="responsive">
 
         <div class="title-search-bar">
-            <div id="buttons"></div>
+            <div id="buttons">
+                
+            </div>
+
+           
+
 
             <div class="search-bar">
 
-                <input type="text" id="user-search" placeholder="Search giphy.."></input>
+<form method="GET" action="">
+
+                <input type="text" id="user-search" placeholder="Search Villains.."></input>
 
 
                 <input id="submit" type="button" value="Submit" class="btn btn-sm btn-success"></input>
+            
+                <button id="clear" type="submit" onClick="refreshPage()">Clear</button>
 
-
-
+</form>
             </div>
         </div>
-    </div>
+    
     </div>
 
+
+    
 
     <div id="results"></div>
 
 
 
-
-
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="assets/gif.js"></script>
+    <script type="text/javascript" src="assets/gif.js"></script>
 </body>
 
 </html>
