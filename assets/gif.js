@@ -1,6 +1,6 @@
 var topics = ["Maleficent", "Scar", "Evil Queen", "Ursula", "Gaston"];
 
-//$("#addTopicsButtons").on("Click", function(){
+//$("#addTopicsBtn").on("Click", function(){
   //var topicsTyped =$("#textInputID").val()
 
 ////  if (topicsTyped.length !=0){
@@ -8,17 +8,16 @@ var topics = ["Maleficent", "Scar", "Evil Queen", "Ursula", "Gaston"];
  // }
 //});
 
-
-
 function refreshPage(){
   window.location.reload();
 }
 
 
+
 function addSearchBtns() {
   $("#buttons").html("");
   for (i = 0; i < topics.length; i++) {
-    var $button = $("<input type='button' class='btn-sm search-btn' />");
+    var $button = $("<input type='button' class='btn-sm search-btn btn' />");
     $button.val(topics[i]);
     $("#buttons").append($button);
   }
@@ -49,6 +48,7 @@ $(document).on("click", ".btn", function () {
     }
     addSearchBtns();
    delete params.q;
+
   }
 
  
@@ -60,9 +60,10 @@ $(document).on("click", ".btn", function () {
     method: "GET",
     success: function (r) {
       for (i = 0; i < params.limit; i++) {
+        // $('results').append('<img src=' + r.data[i] + ' style="display: inline-block;" class="img-responsive thumbnail"/> ');
         var $img = $("<img>");
         var $div = $("<div>");
-        var $rating = $("<h6>");    //font size for ratings
+        var $rating = $("<h6 style='color:whitesmoke;'>");    //font size for ratings
         var gifObj = r.data[i];
         var gif = gifObj.images;
 
@@ -98,6 +99,8 @@ $(document).on("click", ".btn", function () {
 
     }
   });
+
+  
 
 });
 
